@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2AABF2B-FC14-4DD3-9830-81558ED49320}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OnlineClassManagementSystemApp</RootNamespace>
+    <AssemblyName>OnlineClassManagementSystemApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddLecture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLecture.Designer.cs">
+      <DependentUpon>AddLecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeacher.Designer.cs">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book.Designer.cs">
+      <DependentUpon>Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event.Designer.cs">
+      <DependentUpon>Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="Holiday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Holiday.Designer.cs">
+      <DependentUpon>Holiday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecture.Designer.cs">
+      <DependentUpon>Lecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowBooks.Designer.cs">
+      <DependentUpon>ShowBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowEvents.Designer.cs">
+      <DependentUpon>ShowEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowHoliday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowHoliday.Designer.cs">
+      <DependentUpon>ShowHoliday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowSchedule.Designer.cs">
+      <DependentUpon>ShowSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRegistration.Designer.cs">
+      <DependentUpon>StudentRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherRegistration.Designer.cs">
+      <DependentUpon>TeacherRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashBoard.Designer.cs">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInPage.Designer.cs">
+      <DependentUpon>LogInPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OCMSdatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OCMSdatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDashBoard.Designer.cs">
+      <DependentUpon>StudentDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateLecture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateLecture.Designer.cs">
+      <DependentUpon>UpdateLecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStudent.Designer.cs">
+      <DependentUpon>UpdateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTeacher.Designer.cs">
+      <DependentUpon>UpdateTeacher.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddLecture.resx">
+      <DependentUpon>AddLecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeacher.resx">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book.resx">
+      <DependentUpon>Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event.resx">
+      <DependentUpon>Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Holiday.resx">
+      <DependentUpon>Holiday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecture.resx">
+      <DependentUpon>Lecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowBooks.resx">
+      <DependentUpon>ShowBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowEvents.resx">
+      <DependentUpon>ShowEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowHoliday.resx">
+      <DependentUpon>ShowHoliday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowSchedule.resx">
+      <DependentUpon>ShowSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRegistration.resx">
+      <DependentUpon>StudentRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRegistration.resx">
+      <DependentUpon>TeacherRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashBoard.resx">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInPage.resx">
+      <DependentUpon>LogInPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StudentDashBoard.resx">
+      <DependentUpon>StudentDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateLecture.resx">
+      <DependentUpon>UpdateLecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStudent.resx">
+      <DependentUpon>UpdateStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTeacher.resx">
+      <DependentUpon>UpdateTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OCMSdatabaseDataSet1.xsc">
+      <DependentUpon>OCMSdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OCMSdatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OCMSdatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OCMSdatabaseDataSet1.xss">
+      <DependentUpon>OCMSdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OCMSdatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCMSdatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>OCMSdatabase.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
