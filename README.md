@@ -86,4 +86,6 @@ We welcome contributions to enhance the functionality of this system. To contrib
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
+---
+
 Feel free to reach out to [Akash Choudhary](https://www.linkedin.com/in/iakashchoudhary/) for any queries or suggestions.
